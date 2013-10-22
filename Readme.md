@@ -1,6 +1,10 @@
 DDPopoverBackgroundView
 ==============
 
+Note about this fork
+--------------
+You probably don't want to use it. Hardcoding customizations for a very specific purpose.
+
 
 Purpose
 --------------

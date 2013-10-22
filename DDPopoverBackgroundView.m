@@ -49,7 +49,7 @@ static CGFloat s_ArrowBase = DEFAULT_ARROW_BASE;
 static CGFloat s_ArrowHeight = DEFAULT_ARROW_HEIGHT;
 
 #define BKG_IMAGE_SIZE 40.0f
-#define BKG_IMAGE_CORNER_RADIUS 8.0f
+#define BKG_IMAGE_CORNER_RADIUS 0.0f
 #define BKG_IMAGE_CAPINSET (BKG_IMAGE_CORNER_RADIUS * 2.0f)
 
 #define TOP_CONTENT_INSET s_ContentInset
@@ -189,15 +189,15 @@ static UIImage *s_DefaultBackgroundImage = nil;
 		if (s_ShadowEnabled)
 		{
 			popoverBackgroundImageView.layer.shadowColor = [UIColor blackColor].CGColor;
-			popoverBackgroundImageView.layer.shadowOpacity = 0.4f;
+			popoverBackgroundImageView.layer.shadowOpacity = 0.23f;
 			popoverBackgroundImageView.layer.shadowRadius = 2.0f;
-			popoverBackgroundImageView.layer.shadowOffset = CGSizeMake(0.0f, 1.5f);
+			popoverBackgroundImageView.layer.shadowOffset = CGSizeMake(4.0f, 4.0f);
 
-			arrowImageView.layer.shadowColor = [UIColor blackColor].CGColor;
-			arrowImageView.layer.shadowOpacity = 0.4f;
-			arrowImageView.layer.shadowRadius = 2.0f;
-			arrowImageView.layer.shadowOffset = CGSizeMake(0.0f, 1.5f);
-			arrowImageView.layer.masksToBounds = YES;
+//			arrowImageView.layer.shadowColor = [UIColor blackColor].CGColor;
+//			arrowImageView.layer.shadowOpacity = 0.4f;
+//			arrowImageView.layer.shadowRadius = 2.0f;
+//			arrowImageView.layer.shadowOffset = CGSizeMake(0.0f, 1.5f);
+//			arrowImageView.layer.masksToBounds = YES;
 		}
 	}
 
@@ -431,7 +431,7 @@ static UIImage *s_DefaultBackgroundImage = nil;
 			break;
 	}
 
-	popoverBackgroundImageView.frame = CGRectMake(popoverImageOriginX, popoverImageOriginY, popoverImageWidth, popoverImageHeight);
+	popoverBackgroundImageView.frame = CGRectMake(popoverImageOriginX + 13, popoverImageOriginY, popoverImageWidth, popoverImageHeight);
 	arrowImageView.frame = CGRectMake(arrowImageOriginX, arrowImageOriginY, arrowImageWidth, arrowImageHeight);
 }
 
