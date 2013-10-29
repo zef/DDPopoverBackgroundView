@@ -431,7 +431,7 @@ static UIImage *s_DefaultBackgroundImage = nil;
 			break;
 	}
 
-	popoverBackgroundImageView.frame = CGRectMake(popoverImageOriginX + 13, popoverImageOriginY, popoverImageWidth, popoverImageHeight);
+	popoverBackgroundImageView.frame = CGRectMake(popoverImageOriginX + 10, popoverImageOriginY, popoverImageWidth, popoverImageHeight);
 	arrowImageView.frame = CGRectMake(arrowImageOriginX, arrowImageOriginY, arrowImageWidth, arrowImageHeight);
 }
 
